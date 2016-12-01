@@ -189,7 +189,7 @@
 }
 - (IBAction)look:(id)sender {
     
-    [[NSWorkspace sharedWorkspace]openURL:[NSURL URLWithString:@"http://github.com/lsmakethebest"]];
+    [[NSWorkspace sharedWorkspace]openURL:[NSURL URLWithString:@"https://github.com/lsmakethebest/LSCreateModel"]];
     
     
 }
