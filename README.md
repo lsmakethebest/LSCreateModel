@@ -26,7 +26,7 @@
 "rowsCount": 41
 ` 
 ##当你输入LSModel
-会创建LSModel.h LSModel.m LSModelList.h LSModelList.m四个文件当然也支持
+会创建LSModel.h LSModel.m LSModelList.h LSModelList.m四个文件
 
 
 ![image](https://github.com/lsmakethebest/LSCreateModel/blob/master/images/yanshi.gif)
