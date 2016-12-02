@@ -757,7 +757,7 @@
                                 </constraints>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" id="xw9-Jp-QqK">
                                     <font key="font" size="15" name=".PingFangSC-Regular"/>
-                                    <string key="title">1.拖动想要生成模型的文件到下方空白处                                                  2.或者粘贴字符串在下方输入框里(不带字典的首位大括号，                               方便用户选择想要的字段粘贴)                                         3.默认输出目录为桌面,导出完方便用户查看和删除)</string>
+                                    <string key="title">1.拖动想要生成模型的文件到下方空白处                                                  2.或者粘贴字符串在下方输入框里(不带字典的首尾大括号，                               方便用户选择想要的字段粘贴)                                         3.默认输出目录为桌面,导出完方便用户查看和删除)</string>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
