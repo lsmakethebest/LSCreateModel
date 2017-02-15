@@ -20,12 +20,12 @@
 
 @end
 
+
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Do any additional setup after loading the view.
 }
 
 - (IBAction)create:(id)sender {
@@ -145,6 +145,20 @@
     NSString *mFilePath=[deskTopLocation stringByAppendingPathComponent: [NSString stringWithFormat:@"%@.m",fileName]];
     
     NSString *hContent=@"";
+    if (dict==nil) {
+        
+        NSAlert *alert = [[NSAlert alloc] init];
+        [alert setMessageText:@"创建失败"];
+        //[alert setInformativeText:@"副标题"];
+        [alert addButtonWithTitle:@"取消"];
+        //[alert addButtonWithTitle:@"取消"];
+        
+        [alert setAlertStyle:NSAlertStyleWarning];
+        [alert beginSheetModalForWindow:nil modalDelegate:nil didEndSelector:nil contextInfo:nil];
+
+        return;
+    
+    }
     for (NSString *key in dict.allKeys) {
         
         
@@ -214,7 +228,8 @@
     content=[NSString stringWithFormat:@"{%@}",content];
     NSLog(@"%@",content);
     
-    NSDictionary *dict= [NSJSONSerialization JSONObjectWithData:[content dataUsingEncoding:NSUTF8StringEncoding] options:(NSJSONReadingMutableContainers) error:NULL];
+    NSError*error;
+    NSDictionary *dict= [NSJSONSerialization JSONObjectWithData:[content dataUsingEncoding:NSUTF8StringEncoding] options:(NSJSONReadingMutableContainers) error:&error];
     
     
     NSString *fileName=self.createFileName.stringValue;
