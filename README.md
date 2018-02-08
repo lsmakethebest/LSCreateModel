@@ -10,7 +10,8 @@
 
 #可以多层嵌套使用，字典里嵌套字典
 ###比如：
-` "curPagerNo": 1,
+``` 
+"curPagerNo": 1,
 "pageSize": 10,
 "totalPageNumber": 5,
 "list": [
@@ -24,7 +25,7 @@
 "last": false,
 "first": true,
 "rowsCount": 41
-`
+```
 ##当你输入LSModel
 会创建LSModel.h LSModel.m LSModelList.h LSModelList.m四个文件
 
